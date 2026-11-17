@@ -57,18 +57,6 @@ button,input,select{font:inherit}button{cursor:pointer}.hidden{display:none!impo
 .kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin:20px 0 6px}
 @media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:640px){.kpis{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){
- .app{padding:0 14px 40px}
- .topbar{margin:0 -14px 20px;padding:10px 14px}
- .section{padding:18px 14px}
- .mast{gap:10px}.asof{text-align:left}
- .barrow{grid-template-columns:minmax(0,1fr) auto;gap:6px 10px}
- .bartrack{grid-column:1/-1;height:10px}
- .adminform{grid-template-columns:1fr}
- .drawer{width:100vw}
- .tabletools input,.tabletools select{min-width:0;flex:1 1 45%}
- .tabletools input[type=search]{flex:1 1 100%;min-width:0}
-}
 .kpi{background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue);padding:15px 16px;border-radius:0 0 4px 4px}
 .kpi.warn{border-top-color:var(--amber)}.kpi.alert{border-top-color:var(--rose)}.kpi.ok{border-top-color:var(--green)}
 .klabel{text-transform:uppercase;color:var(--muted);letter-spacing:.1em;font-size:10px;font-weight:700}
@@ -139,6 +127,18 @@ tfoot td{background:#e8edf3;font-weight:700;border-top:2px solid var(--navy)}
 #tip{position:fixed;z-index:80;background:var(--navy);color:#fff;font-size:12px;padding:7px 10px;border-radius:3px;pointer-events:none;max-width:280px;box-shadow:0 6px 20px #0006;display:none;line-height:1.45}
 footer{border-top:2px solid var(--navy);margin-top:26px;padding-top:14px;color:var(--muted);font-size:11.5px}
 @media print{.topbar,.tabletools,.drawer,.scrim,#tip,.quiet,.nav{display:none!important}.section{box-shadow:none;break-inside:avoid}.app{max-width:none}.tablewrap{max-height:none;overflow:visible}}
+@media(max-width:640px){
+ .app{padding:0 14px 40px}
+ .topbar{margin:0 -14px 20px;padding:10px 14px}
+ .section{padding:18px 14px}
+ .mast{gap:10px}.asof{text-align:left}
+ .barrow{grid-template-columns:minmax(0,1fr) auto;gap:6px 10px}
+ .bartrack{grid-column:1/-1;height:10px}
+ .adminform{grid-template-columns:1fr}
+ .drawer{width:100vw}
+ .tabletools input,.tabletools select{min-width:0;flex:1 1 45%}
+ .tabletools input[type=search]{flex:1 1 100%;min-width:0}
+}
 </style>
 </head>
 <body>
